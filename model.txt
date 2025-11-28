@@ -1,0 +1,14 @@
+# model.txt - Archivo de configuración del modelo
+
+# FUNCIÓN: El resultado de la simulación es Z = A * exp(B) + C
+# La función debe ser definida como una expresión evaluable.
+# Las variables (A, B, C) deben estar definidas a continuación.
+FUNCTION: A * exp(B) + C
+
+# DISTRIBUCIONES:
+# Formato: VARIABLE: TIPO_DISTRIBUCION(PARAMETROS_NECESARIOS)
+# Los escenarios generados serán solo los valores de A, B y C.
+
+A: uniform(min=10, max=20)
+B: normal(mu=0.5, sigma=0.1)
+C: poisson(lambda=5)
